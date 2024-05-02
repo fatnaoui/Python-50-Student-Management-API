@@ -17,7 +17,7 @@ class Student(models.Model):
 class Institute(models.Model):
     TYPES = {
         ("c","college"),
-        ("h","high cschool")
+        ("h","high school")
     }
     name = models.CharField(max_length=100)
     type_of_institute = models.CharField(max_length=1,choices=TYPES)
