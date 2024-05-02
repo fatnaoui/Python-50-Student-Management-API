@@ -16,6 +16,6 @@ class StudentAPI(ListCreateAPIView):
     queryset=models.Student.objects.all()
     serializer_class=serialisers.StudentSerializer
 
-class StudentDAPI(RetrieveAPIView):
+class StudentDAPI(RetrieveUpdateAPIView):
     queryset=models.Student.objects.all()
     serializer_class=serialisers.StudentSerializer
