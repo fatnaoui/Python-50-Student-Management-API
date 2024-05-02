@@ -12,7 +12,7 @@ from rest_framework.generics import (
 )
 
 # Create your views here.
-class StudentAPI(ListAPIView):
+class StudentAPI(ListCreateAPIView):
     queryset=models.Student.objects.all()
     serializer_class=serialisers.StudentSerializer
 
