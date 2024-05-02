@@ -15,3 +15,7 @@ from rest_framework.generics import (
 class StudentAPI(ListAPIView):
     queryset=models.Student.objects.all()
     serializer_class=serialisers.StudentSerializer
+
+class StudentDAPI(RetrieveAPIView):
+    queryset=models.Student.objects.all()
+    serializer_class=serialisers.StudentSerializer
